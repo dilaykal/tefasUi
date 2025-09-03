@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
 
-//const API_BASE_URL = "http://localhost:8080/api/funds";
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const FundSearch = () => {
   const [fundCode, setFundCode] = useState('');

@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Fon Takip Sistemi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu depo, Spring Boot API'ye bağlanan ve fon verilerini görselleştiren **React** tabanlı bir kullanıcı arayüzü içerir.
 
-## Available Scripts
+## İçindekiler
 
-In the project directory, you can run:
+- [Teknolojiler](#-teknolojiler)
+- [Özellikler](#-özellikler)
+- [Kurulum](#-kurulum)
+- [API Bağlantısı](#-api-bağlantısı)
+- [Kullanım ve Ekran Görüntüleri](#-kullanım-ve-ekran-görüntüleri)
+- [Testler](#-testler)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Teknolojiler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Bu proje, aşağıdaki temel teknolojileri kullanarak geliştirilmiştir:
 
-### `npm test`
+-   **React:** Kullanıcı arayüzü için temel JavaScript kütüphanesidir.
+-   **React Router DOM:** Sayfa geçişlerini ve URL yönetimini sağlar.
+-   **Tailwind CSS:** Hızlı ve modern bir tasarım için kullanılan CSS kütüphanesidir.
+-   **Heroicons:** İkonların kullanımı için gerekli kütüphanedir.
+-   **Axios:** API'ye HTTP istekleri göndermek için kullanılır.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Özellikler
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   **Tüm Fonları Görüntüleme:** Kullanıcılar, API'den çekilen tüm fonların güncel getirilerini listeleyebilir.
+-   **Sıralama ve Filtreleme:** Fon tablosundaki veriler, sütun başlıklarına göre sıralanabilir.
+-   **Excel'e Aktarma:** Görüntülenen fon verilerini CSV formatında Excel'e aktarır.
+-   **Fona Göre Arama:** Belirli bir fon kodunu veya tarih aralığını kullanarak arama yapma imkanı sunar.
+-   **Getiri Güncelleme:** Kullanıcıların, fon getirilerini manuel olarak düzenleyebilmesi için bir arayüz sağlar.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Kurulum
 
-### `npm run eject`
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip edin:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.  Bu depoyu klonlayın:
+    ```bash
+    git clone https://github.com/dilaykal/tefasUi.git
+    ```
+2.  Proje dizinine gidin:
+    ```bash
+    cd tefasUi
+    ```
+3.  Gerekli kütüphaneleri yükleyin:
+    ```bash
+    npm install
+    ```
+4.  Spring Boot API uygulamasının çalıştığından emin olun.
+5.  Uygulamayı çalıştırın:
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Uygulama, varsayılan olarak `http://localhost:3000` adresinde çalışmaya başlayacaktır.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔗 API Bağlantısı
 
-## Learn More
+Bu frontend uygulaması, şu adresteki API'ye bağlanır: `http://localhost:8080`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Bağlantı ayarları, .env dosyası içinde tanımlanmıştır. Eğer API farklı bir adreste çalışıyorsa, bu adresi güncellemeniz gerekmektedir.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🖼️ Kullanım ve Ekran Görüntüleri
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-   **Tüm Fonlar Sayfası:** Tüm fonları güncel getirileriyle listeler. Sütun başlıklarına tıklayarak sıralama yapabilir ve Excel'e aktarma butonuyla verileri indirebilirsiniz.
+<img width="1686" height="907" alt="image" src="https://github.com/user-attachments/assets/e4495836-e0f7-4489-aa3b-07aa0e252006" />
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+-   **Fona Göre Arama Sayfası:** Belirli bir fon kodunu arayabilir, tarih aralığı belirterek o fona ait geçmiş verileri görüntüleyebilirsiniz. Ayrıca, verileri düzenlemek için düzenleme butonuna tıklayarak getiri değerlerini güncelleyebilirsiniz.
+<img width="1701" height="908" alt="image" src="https://github.com/user-attachments/assets/ea31ab46-0156-4882-a2a9-751ec97c92ee" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
