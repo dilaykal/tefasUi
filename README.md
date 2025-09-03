@@ -61,7 +61,7 @@ Uygulama, varsayılan olarak `http://localhost:3000` adresinde çalışmaya baş
 
 ---
 
-## 🔗 API Bağlantısı
+## API Bağlantısı
 
 Bu frontend uygulaması, şu adresteki API'ye bağlanır: `http://localhost:8080`.
 
@@ -69,7 +69,7 @@ Bağlantı ayarları, .env dosyası içinde tanımlanmıştır. Eğer API farkl�
 
 ---
 
-## 🖼️ Kullanım ve Ekran Görüntüleri
+## Kullanım ve Ekran Görüntüleri
 
 -   **Tüm Fonlar Sayfası:** Tüm fonları güncel getirileriyle listeler. Sütun başlıklarına tıklayarak sıralama yapabilir ve Excel'e aktarma butonuyla verileri indirebilirsiniz.
 <img width="1686" height="907" alt="image" src="https://github.com/user-attachments/assets/e4495836-e0f7-4489-aa3b-07aa0e252006" />
